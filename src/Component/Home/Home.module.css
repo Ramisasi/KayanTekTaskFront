@@ -1,0 +1,149 @@
+.homeDiv {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 90vh;
+}
+.CounterDiv {
+  /* width: 100%;
+  height: 20%; */
+  overflow: hidden;
+  padding: 40px;
+  color: white;
+}
+.CounterDivTop {
+  height: 80%;
+  display: flex;
+  padding: 10px 20px;
+}
+.divTopRight {
+  width: 80%;
+}
+.divTopLeft {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+.CounterDivBottom {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  margin: 0px !important;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.borderRadius {
+  border-radius: 10px;
+}
+.backgroundOne {
+  background-color: var(--Mai-color);
+}
+.backgroundTwo {
+  background-color: seagreen;
+}
+.backgroundThree {
+  background-color: rgb(232, 43, 43);
+}
+/* .backgroundOne .CounterDivBottom:hover {
+  background-color: var(--Mai-color-hover);
+}
+.backgroundTwo .CounterDivBottom:hover {
+  background-color: rgb(30, 93, 57);
+}
+.backgroundThree .CounterDivBottom:hover {
+  background-color: rgb(135, 32, 32);
+} */
+.chartDiv {
+  /* background-color: tomato; */
+  /* width: 100%;
+  height: 80%; */
+  margin-top: 20px;
+}
+.chartDivTop {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+}
+.chartDivBottom {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chartBottomDivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+.chartBottomDivs .ColorDiv {
+  height: 20px;
+  width: 50px;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+.chartBottomDivs p {
+  margin: 7px 10px 10px 0;
+}
+.chartBottomDivs .ColorOne {
+  background-color: rgba(159, 55, 55);
+}
+.chartBottomDivs .ColorTow {
+  background-color: rgb(60, 55, 159);
+}
+.chartBottomDivs .ColorTree {
+  background-color: rgba(55, 159, 64);
+}
+.CounterDiv a {
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+}
+.chartStyle {
+  width: 640px !important;
+  height: 640px !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .homeDiv {
+    height: auto;
+  }
+  .backgroundOne,
+  .backgroundTwo {
+    margin-bottom: 10px;
+  }
+  .chartDivBottom {
+    flex-direction: column;
+    align-items: start;
+  }
+  .chartBottomDivs {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 1031px) {
+  .homeDiv {
+    height: auto;
+  }
+  .backgroundOne,
+  .backgroundTwo {
+    margin-bottom: 10px;
+  }
+  .chartDivBottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .chartBottomDivs {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .chartDivBottom {
+    flex-direction: row;
+    align-items: end;
+  }
+  .chartBottomDivs {
+    padding: 0px;
+  }
+}

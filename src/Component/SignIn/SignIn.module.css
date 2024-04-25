@@ -1,0 +1,67 @@
+.SignInBackground {
+  background-image: url("../../image/signIn.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.signInForm {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-right: 20px;
+}
+.Title {
+  padding: 20px;
+}
+.inputDiv {
+  width: 90%;
+  padding: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .SignInBackground {
+    justify-content: center;
+  }
+  .signInForm {
+    width: 70%;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .inputDiv {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 1031px) {
+  .SignInBackground {
+    justify-content: center;
+  }
+  .signInForm {
+    width: 50%;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .inputDiv {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .SignInBackground {
+    justify-content: end;
+  }
+  .signInForm {
+    width: 40%;
+    padding: 50px;
+    margin-left: 20px;
+  }
+  .inputDiv {
+    width: 90%;
+  }
+}

@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --Mai-color: #eed484;
+  --Mai-color-hover: #bba669;
+  --Mai-color-error: rgb(205, 24, 24);
+  --Mai-color-error-Hover: rgb(252, 2, 2);
+  --Mai-clear-button: rgb(255, 242, 0);
+}
+
+body {
+  /* color: var(--Mai-color) !important; */
+  direction: rtl;
+  font-family: "Readex Pro", sans-serif;
+  background-color: #f4f6f9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--Mai-color);
+  border-radius: 10px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* background-color: blue; */
+  margin: 0 !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+
+.swiper-slide iframe,
+img {
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+.swiper-slide i {
+  margin-top: 10px;
+  color: rgba(255, 0, 0, 0.2);
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.swiper-slide i:hover {
+  color: rgba(255, 0, 0, 0.5);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--Mai-color);
+}
+.addImageStyle {
+  cursor: pointer !important;
+}
+.image-upload > input {
+  display: none;
+}
+.imageColor {
+  margin-top: 10px;
+  color: rgba(100, 148, 237, 0.2) !important;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.imageColor:hover {
+  color: rgba(100, 148, 237, 0.5) !important;
+}
+.settingDev {
+  background-color: rgba(216, 216, 216, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}
+.settingActive {
+  background-color: var(--Mai-color) !important;
+  border: none;
+}
+
+
+.fileTitle {
+  background-color: var(--Mai-color) !important;
+  padding: 15px 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputDiv {
+  padding: 30px;
+  background-color: white;
+}
+.inputStyle {
+  border: silver solid 2px !important;
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+}
+.inputStyle:focus {
+  border: var(--Mai-color) solid 2px !important;
+  border-radius: 15px 0px;
+  outline: none;
+}
+.fileButton {
+  padding-left: 70px;
+  padding-bottom: 20px;
+  text-align: end;
+}
+.fileButtonStyle {
+  background-color: var(--Mai-color);
+  border: var(--Mai-color) solid 2px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.clearButton {
+  background-color: var(--Mai-clear-button);
+  border: var(--Mai-clear-button) solid 2px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+.fileButtonStyle:hover {
+  background-color: white;
+}
+.fileButtonStyle:active {
+  background-color: var(--Mai-color);
+}
+.clearButton:hover {
+  background-color: white;
+}
+.clearButton:active {
+  background-color: var(--Mai-color);
+}
+.searchDiv {
+  width: 100%;
+}
+.tableScroll .UpdateButton {
+  margin-left: 5px !important;
+}
+.LinkColor {
+  color: var(--Mai-color) !important;
+}
+.LinkColor:hover {
+  background-color: var(--Mai-color) !important;
+  color: black !important;
+}
+.newFileDiv {
+  display: none;
+}
+.newFileDivIcon {
+  cursor: pointer;
+  font-size: 30px;
+}
+.UpdateFileSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(195, 195, 195, 0.5);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.UpdateFileSectionDev {
+  width: 70%;
+}
+.closeUpdateFileSection {
+  align-self: self-start;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.closeButton {
+  font-size: 30px;
+  color: var(--Mai-color-error);
+  cursor: pointer;
+  transition: all 1s;
+}
+.closeButton:hover {
+  color: var(--Mai-color-error-Hover);
+}
+.SignForm{
+  height: 100vh;
+}
+.CustomerSignUpImage{
+  background-image: url("./image/SignUpCutomer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CustomerSignUpImageForm {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50%;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-right: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fileButton {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .tableScroll::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .tableScroll::-webkit-scrollbar-thumb {
+    background: var(--Mai-color);
+    border-radius: 10px;
+  }
+  .tableScroll .UpdateButton {
+    margin-left: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .UpdateFileSectionDev {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 1031px) {
+  .fileButton {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .tableScroll::-webkit-scrollbar {
+    width: 1px;
+  }
+  .tableScroll::-webkit-scrollbar-thumb {
+    background: var(--Mai-color);
+    border-radius: 10px;
+  }
+  .tableScroll .UpdateButton {
+    margin-left: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .UpdateFileSectionDev {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .fileButton {
+    padding-left: 70px;
+    text-align: end;
+  }
+  .tableScroll::-webkit-scrollbar {
+    width: 1px;
+  }
+  .tableScroll::-webkit-scrollbar-thumb {
+    background: var(--Mai-color);
+    border-radius: 10px;
+  }
+  .tableScroll .UpdateButton {
+    margin-left: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .UpdateFileSectionDev {
+    height: 100%;
+  }
+}
